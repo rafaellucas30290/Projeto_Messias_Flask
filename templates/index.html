@@ -1,0 +1,26 @@
+{% extends "modelo.html" %}
+{% block conteudo %}
+<div class="d-flex justify-content-center align-items-center pt-3">
+        <h1>Disciplinas e Cursos</h1>
+        
+    </div>
+    <h1>Adicionar Curso</h1>
+
+<form action="{{ url_for('adicionar_curso')}}" method="post">
+  <div class="mb-3">
+    <label for="curso" class="form-label">Curso</label>
+    <input  class="form-control" id="curso" name="curso" aria-describedby="emailHelp">
+    <div id="cursoHelp" class="form-text">Nome do Curso a ser adicionado.</div>
+  </div>  
+  <div class="mb-3">
+    <label for="carga_h" class="form-label">Carga Horária</label>
+    <input  class="form-control" id="carga_h" name="carga_h" aria-describedby="emailHelp">
+    <div id="horaHelp" class="form-text">Carga Horária do Curso.</div>
+  </div>
+  <div class="mb-3">
+    <label for="descricao" class="form-label">Descrição do Curso</label>
+    <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+{% endblock %}
