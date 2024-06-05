@@ -4,17 +4,17 @@
 
 <form action="{{ url_for('adicionar_curso')}}" method="post">
   <div class="mb-3">
-    <label for="curso" class="form-label">Curso</label>
+    <label for="curso" class="form-label">Data</label>
     <input  class="form-control" id="curso" name="curso" aria-describedby="emailHelp">
-    <div id="cursoHelp" class="form-text">Nome do Curso a ser adicionado.</div>
+    <div id="cursoHelp" class="form-text">Data do evento</div>
   </div>  
   <div class="mb-3">
-    <label for="carga_h" class="form-label">Carga Horária</label>
+    <label for="carga_h" class="form-label">Tipo</label>
     <input  class="form-control" id="carga_h" name="carga_h" aria-describedby="emailHelp">
-    <div id="horaHelp" class="form-text">Carga Horária do Curso.</div>
+    <div id="horaHelp" class="form-text">Aula ou Evento.</div>
   </div>
   <div class="mb-3">
-    <label for="descricao" class="form-label">Descrição do Curso</label>
+    <label for="descricao" class="form-label">Descrição</label>
     <textarea class="form-control" id="descricao" name="descricao" rows="3"></textarea>
   </div>
   <button type="submit" class="btn btn-primary">Enviar</button>
